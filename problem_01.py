@@ -18,7 +18,7 @@ def get_total_and_ave(monthly_rainfall):
     return total, average
 
 
-def print_total_and_ave(year, total, average):
+def print_total_and_ave(total, average):
     print("For 12 months")
     print(f"Total rainfall: {total} inches")
     print(f"Average monthly rainfall: {round(average, 2)} inches")
@@ -26,7 +26,7 @@ def print_total_and_ave(year, total, average):
 
 # Main flow
 num_of_years = get_num_of_years()
-for year in range(0, num_of_years):
+for year in range(num_of_years):
     monthly_rainfall = get_monthly_rainfall(year + 1)
     total, average = get_total_and_ave(monthly_rainfall)
-    print_total_and_ave(year, total, average)
+    print_total_and_ave(total, average)
