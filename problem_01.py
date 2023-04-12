@@ -5,7 +5,7 @@ def get_num_of_years():
 def get_monthly_rainfall(year):
     print(f"\nFor year {year}")
     monthly_rainfall = []
-    for month in range(0, 12):
+    for month in range(12):
         monthly_rainfall.append(int(input(f"Enter the rainfall amount for month-{month + 1}: ")))
     return monthly_rainfall
 

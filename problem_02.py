@@ -40,7 +40,7 @@ def calc_daily_change(organism_start_count, daily_increase_pct, num_of_days_data
 def print_daily_organism_count(daily_organism_count):
     print("Day Approximate          Population")
     print("__________________________________________________")
-    for day in range(0, len(daily_organism_count)):
+    for day in range(len(daily_organism_count)):
         current_day = day + 1
         space_append = ' ' * (25 - len(str(day + 1)))
         current_day_count = daily_organism_count[day]
