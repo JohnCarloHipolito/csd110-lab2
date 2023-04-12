@@ -30,7 +30,7 @@ def print_yearly_total_and_ave(yearly_total_and_ave):
         print(f"\nFor year {year + 1}")
         print("For 12 months")
         print(f"Total rainfall: {yearly_total_and_ave[year][0]} inches")
-        print(f"Average monthly rainfall: {yearly_total_and_ave[year][1]} inches")
+        print(f"Average monthly rainfall: {round(yearly_total_and_ave[year][1], 2)} inches")
 
 
 # Main flow
